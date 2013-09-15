@@ -8,8 +8,8 @@ title: 说点新鲜的
 昨天参加了杭州GDG（Google Developer Group）在杭电举行的交流会，
 在活动中再次见识了各路大牛，也稍稍的被刺激了一下，见贤而思齐嘛。
 
-其中，Agassi大神讲了几个工程师（其实可以认为是互联网行业的程序员）所使用的工具，
-其中就有Vim和Github，重点是用git和markdown来写博客，这就又勾起了我用jekyll来写博客的
+其中，Agassi大神讲了工程师（其实可以认为是互联网行业的程序员）的几个常用工具，
+比如Vim、Stackoverflow、git、Trello、Github等，重点是用git和markdown来写博客，这就又勾起了我用jekyll来写博客的
 小激情，虽然前几次用jekyll写博客都已失败而告终，但始终无法释怀，人贵在折腾吧。
 
 虽然，题目是*说点新鲜的*，但其实免不了老调重弹。
