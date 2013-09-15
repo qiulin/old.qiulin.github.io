@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 说点新鲜的
+comments: true
 ---
 
 **缘起**
