@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: About the Theme
-tags: [Jekyll, theme, modern, minimal, responsive]
+title: About me
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
@@ -10,23 +9,22 @@ image:
 share: true
 ---
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
+ID：Qiulin（aka xcodeman）
 
-## What HPSTR brings to the table:
+Geek and Nerd,兴趣广泛，喜欢阅读，喜欢画画（但很长时间没有拿起画笔了）
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
+毕业于一个三流大学的数学专业，因为历史原因，曾对数学没什么兴趣，但现在有很大的改观
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup" class="btn btn-info">Install the Theme</a></div>
+喜欢计算机，喜欢折腾，有着Geek的精神，乐于接受新鲜事物
 
-[^1]: Example: *domain.com/category-name/post-title*
+最近混迹于新浪微博[@行者秋林](http://weibo.com/xcodeman)，开源的积极拥护者，Linux用户，Google粉
+
+希望成为一个技术流，并以之为毕生的快乐
+
+爱好和平，但有时候有点愤青，喜欢寻求规矩下的最大自由，不喜欢政治
+
+执着追求着自己的梦想，并为之放弃了很多，但不曾后悔
+
+现就职于杭州某网站做运维
+
+现主要关注Linux、Nginx、Java EE、移动应用和分布式文件存储等方面
