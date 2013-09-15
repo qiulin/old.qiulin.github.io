@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 说点新鲜的
+title: Start Something New
 ---
 
 **缘起**
