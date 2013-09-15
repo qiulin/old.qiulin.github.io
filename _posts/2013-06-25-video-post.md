@@ -7,7 +7,7 @@ comments: true
 share: true
 ---
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/SqYiglufb8Y"> </iframe>
+<iframe width="560" height="315" src="http://player.youku.com/player.php/sid/XNjA4NTMwMTUy/v.swf"> </iframe>
 
 Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
 
