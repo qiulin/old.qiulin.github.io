@@ -3,8 +3,6 @@ layout: post
 title: 说点新鲜的
 ---
 
-{% include JB/setup %}
-
 **缘起**
 
 昨天参加了杭州GDG（Google Developer Group）在杭电举行的交流会，
