@@ -38,3 +38,5 @@ do
 echo "${files} was rsynced" >>/tmp/rsync.log 2>&1  
 done
 {% endhighlight%}
+
+-EOF-
