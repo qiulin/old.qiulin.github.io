@@ -14,9 +14,7 @@ share: true
 就是在post页面中，下一篇博文的read more内容显示的还是当前博文的内容，
 看了一下*_layout/post.html*的源码，引起问题的源码如下：
 
-{% highlight html %}
-<p>{% if post.description %}{{ post.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %} <a href="{{ site.url }}{{ post.url }}">Continue reading</a></p>
-{% endhighlight %}
+<script src="https://gist.github.com/qiulin/f8fcb4e67887f30954a0.js"></script>
 
 *content*表示的是当前文章的内容，要fixbug只要改为*post.content*就可以了。
 
@@ -24,5 +22,9 @@ share: true
 虽然是一件很小的事儿，但带来的成就感，绝对比DotA强多了。也秀了一下自己惨不忍睹的英语。
 
 再次推荐这个jekyll主题，**高大上**，地址github自己找。
+
+*ps.*
+
+因为源码中含有jekyll标签，所以用gist来贴代码
 
 -EOF-
