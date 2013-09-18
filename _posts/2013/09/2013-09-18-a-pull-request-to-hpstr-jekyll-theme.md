@@ -18,11 +18,11 @@ share: true
 <p>{% if post.description %}{{ post.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %} <a href="{{ site.url }}{{ post.url }}">Continue reading</a></p>
 {% endhighlight %}
 
-_content_表示的是当前文章的内容，要fixbug只要改为_post.content_就可以了。
+*content*表示的是当前文章的内容，要fixbug只要改为*post.content*就可以了。
 
 今天早上看到作者已经接受了这个pull request，也已经合并到master分支里面了。
 虽然是一件很小的事儿，但带来的成就感，绝对比DotA强多了。也秀了一下自己惨不忍睹的英语。
 
-再次推荐这个jekyll主题，*高大上*，地址github自己找。
+再次推荐这个jekyll主题，**高大上**，地址github自己找。
 
 -EOF-
