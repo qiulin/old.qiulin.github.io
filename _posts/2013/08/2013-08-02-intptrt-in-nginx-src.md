@@ -56,3 +56,5 @@ typedef uintptr_t ngx_uint_t;
 文档参见[http://oss.org.cn/kernel-book/ldd3/ch11.html](http://oss.org.cn/kernel-book/ldd3/ch11.html)
 
 另外找到一篇关于c位运算很有用的文章[http://blog.chinaunix.net/uid-20488859-id-1941166.html](http://blog.chinaunix.net/uid-20488859-id-1941166.html)
+
+-EOF-
