@@ -31,12 +31,12 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Past Posts
+  - title: 以前的博客
     url: http://qlin.net
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    China/Shanghai
 future:      true
 pygments:    true
 markdown:    kramdown
