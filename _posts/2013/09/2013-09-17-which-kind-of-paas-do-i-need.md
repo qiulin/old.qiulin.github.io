@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我需要怎么样的PAAS平台
+title: 我需要怎样的PAAS平台
 tags: [PAAS]
 image:
   feature: abstract-3.jpg
