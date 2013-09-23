@@ -18,7 +18,7 @@ share: true
 网络接口绑定（聚合）把不同的物理接口合并成一个逻辑接口，只有一个IP地址。
 一个N路聚合接口能够减少N-1个物理接口，在某些情况下性能能够得到改善。
 
-###什么时候绑定
+###什么时候需要绑定
 
 * 网络连接需要HA
 * 工作负载：连续访问大文件（大多数时间消耗在读写上）
@@ -41,7 +41,7 @@ with bonding mode 6 on 2 10-GbE NICs with jumbo frames. That's 1.5GB/s of networ
 特大帧（Jumbo Frames）是长度大于1500bytes的以太网（或无限带宽技术）帧（无限宽带技术帧默认是2000bytes左右）。
 增加帧的大小可以降低操作系统和硬件的负载，操作系统和硬件必须处理每一帧的中断和协议信息。
 
-###什么时候来配置
+###什么时候需要配置
 
 * 所有比1-GbE快的网络
 * 负载为连续大文件读写
@@ -63,7 +63,7 @@ with bonding mode 6 on 2 10-GbE NICs with jumbo frames. That's 1.5GB/s of networ
 （这一句翻不好，原文为：For example, this method can keep self-heal and rebalancing traffic from competing with non-Gluster
 client traffic for a network interface, and will better support multi-stream I/O.）
 
-###什么时候来配置
+###什么时候需要配置
 
 * Gluster服务端提供非Gluster服务时，比如NFS, Swift(REST), CIFS等。对Gluster客户端没有什么帮助（额外的Gluster挂载节点）。
 * 网络端口是over-utilized。
@@ -72,5 +72,9 @@ client traffic for a network interface, and will better support multi-stream I/O
 
 * 大多数网卡是有多端口的，把端口1分配给非Gluster服务端口，端口2分配给Gluster服务端口。
 * 为简化配置，把Gluster服务端口和非Gluster服务端口分配到不同的VLAN网段。
+
+*ps.*
+
+第一次翻技术文档，翻译的不是很好，语言也不太通顺，欢迎大家提建议。
 
 -EOF-
