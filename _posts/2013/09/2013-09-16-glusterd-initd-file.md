@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Glusterd服务init.d脚本分析
-tags: [glusterfs, 填坑]
+tags: [GlusterFS, 填坑]
 image:
   feature: abstract-10.jpg
   credit: dargadgetz
