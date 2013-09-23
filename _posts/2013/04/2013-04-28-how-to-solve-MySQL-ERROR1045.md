@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "如何解决MySQL ERROR1045"
-description: "如何解决MySQL Access denied for user 'root'@'localhost'"
+description: "如何解决MySQL Access denied for user \'root\'@\'localhost\'"
 modified: 2013-08-20
 tags: [MySQL]
 image:
