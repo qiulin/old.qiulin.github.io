@@ -15,7 +15,7 @@ share: true
 很长时间没有登陆过mysql，结果把密码忘记了，一直报MySQL ERROR 1045 (28000): Access denied for user ‘root’@'localhost’错误，
 在网上搜了一下，得到如下解决方法：'
 
-{% highlighting bash %}
+{% highlight bash %}
 # /etc/init.d/mysql stop
 # mysqld_safe --user=mysql --skip-grant-tables --skip-networking &
 # mysql -u root mysql
