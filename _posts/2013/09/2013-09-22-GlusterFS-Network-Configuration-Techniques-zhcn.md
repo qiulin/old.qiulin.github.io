@@ -11,7 +11,7 @@ comments: true
 share: true  
 ---
 
-最近在研究GlusterFS，中文的文档比较少，自己翻译一下，这一篇是[Network Configuration Techniques](http://www.gluster.org/community/documentation/index.php/Network_Bonding)）
+最近在研究GlusterFS，中文的文档比较少，自己翻译一下，这一篇是[Network Configuration Techniques](http://www.gluster.org/community/documentation/index.php/Network_Bonding)。
 
 ##绑定最佳实践
 
