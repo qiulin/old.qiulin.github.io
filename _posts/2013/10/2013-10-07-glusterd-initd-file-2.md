@@ -51,7 +51,6 @@ confirm：显示“Start service $1(Y)es/(N)o/(C)ontinue?[Y]”的提示信息�
 设置基本的服务名，方便以后复用。
 
 > [ -e /run ] && RUNDIR="/run"
-
 > PIDFILE="${RUNDIR:-/var/run}/${BASE}.pid"
 
 设置运行目录run和pid文件
@@ -61,11 +60,8 @@ confirm：显示“Start service $1(Y)es/(N)o/(C)ontinue?[Y]”的提示信息�
 获取pid
 
 > LOG_LEVEL=''
-
 > LOG_FILE=''
-
 > GLUSTERD_OPTIONS=''
-
 > GLUSTERD_NOFILE='65536'
 
 覆盖sysconfig文件夹中的相应设置。
@@ -92,7 +88,7 @@ confirm：显示“Start service $1(Y)es/(N)o/(C)ontinue?[Y]”的提示信息�
 
 设置锁文件
 
-下面介绍一个主要的操作
+###下面介绍一个主要的操作
 
 **start**
 
