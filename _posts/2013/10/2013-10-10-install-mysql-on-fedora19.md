@@ -25,3 +25,9 @@ service msyqld stop
 # 登陆mysql
 mysql -u root -p
 {% endhighlight %}
+
+**ps.**
+
+具体systemctl是怎么管理服务的，以后有时间在研究，先挖个坑...
+
+-EOF-
