@@ -2,7 +2,7 @@
 layout: post
 title: "isnowfy"
 description: "一个技术博客"
-tags: [link]
+tags: [blogroll]
 comments: true
 link: http://www.isnowfy.com
 share: true
