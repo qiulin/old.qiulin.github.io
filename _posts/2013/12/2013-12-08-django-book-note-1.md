@@ -10,4 +10,4 @@ comments: true
 share: true  
 ---
 
-<script src="https://gist.github.com/qiulin/d3f32d65174e2d216ed9.js"></script>
+<script src="https://gist.github.com/qiulin/7844814.js"></script>
