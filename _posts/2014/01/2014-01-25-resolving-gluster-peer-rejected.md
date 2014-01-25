@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "½â¾öglusterfsµÄpeer rejectedÎÊÌâ"
+title: "è§£å†³glusterfsçš„peer rejectedé—®é¢˜"
 tag: ["glusterfs"]
 comments: true
 share: true
 ---
 
-½ñÌìÔçÉÏ¼ì²égluster½Úµã×´Ì¬£¬·¢ÏÖÆäÖĞgfs0ºÍgfs1»¥Ïà±¨¶Ô·½½Úµã×´Ì¬Îªpeer rejected£¬ÈçÏÂËùÊ¾£º
+ä»Šå¤©æ—©ä¸Šæ£€æŸ¥glusterèŠ‚ç‚¹çŠ¶æ€ï¼Œå‘ç°å…¶ä¸­gfs0å’Œgfs1äº’ç›¸æŠ¥å¯¹æ–¹èŠ‚ç‚¹çŠ¶æ€ä¸ºpeer rejectedï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
 
 {% highlight bash %}
 [root@gfs0 2013]# gluster peer status
@@ -21,7 +21,7 @@ Uuid: 09f8b75c-af4c-48fa-b936-442578246db1
 State: Peer in Cluster (Connected)
 {% endhighlight %}
 
-²éÔÄÁËglusterµÄ¹Ù·½ÎÄµµ£¬ÀïÃæÓĞ½â¾ö·½·¨£º
+æŸ¥é˜…äº†glusterçš„å®˜æ–¹æ–‡æ¡£ï¼Œé‡Œé¢æœ‰è§£å†³æ–¹æ³•ï¼š
 
 1. Stop glusterd
 2. In /var/lib/glusterd, delete everything except glusterd.info (the UUID file)
@@ -32,8 +32,8 @@ State: Peer in Cluster (Connected)
 
 ref: [Resolving Peer Rejected](http://www.gluster.org/community/documentation/index.php/Resolving_Peer_Rejected)
 
-µ«»¹ÊÇÓöµ½±È½ÏÆæİâµÄÎÊÌâ£¬¾ÍÊÇgfs0ºÍgfs1»¥±¨ÎÊÌâ£¬µ«gfs2ÓÖ±¨Á½¸ö¶¼ÊÇºÃµÄ£¬ÕâÑù¾Í¸ã²»Çå³şµ½µ×ÊÇgfs0»¹ÊÇgfs1³öÎÊÌâ£¬
-ÕâÑùÎÒ¾ÍÑ¡ÔñĞŞ¸´gfs1£¬µ«ĞŞ¸´ÍêÖ®ºóÔÙ´Î¼ì²é×´Ì¬ÓÖ·¢ÏÖgfs2Ò²±¨peer rejectedÁË£¬È»ºóÓÖĞŞ¸´gfs2¡£È»ºó£¬ÄãÃ»²Â´í£¬gfs2ÓÖ±¨gfs0 rejectedÁË¡£
-Ö»ÄÜÓÖĞŞ¸´gfs0£¬ÕâÑù×Ó¾ÍĞŞ¸´ÁËÒ»È¦£¬ËäÈ»×îºóÎÊÌâ½â¾öÁË£¬µ«ÕâÑù×Ó×Ü¹é²»ÊÇ¸ö°ì·¨£¬Áô¸öÎÊÌâ¼ÌĞøÑĞ¾¿°É£¬ÓĞÍ·Ğ÷ÁËÔÙĞ´¡£
+ä½†è¿˜æ˜¯é‡åˆ°æ¯”è¾ƒå¥‡è‘©çš„é—®é¢˜ï¼Œå°±æ˜¯gfs0å’Œgfs1äº’æŠ¥é—®é¢˜ï¼Œä½†gfs2åˆæŠ¥ä¸¤ä¸ªéƒ½æ˜¯å¥½çš„ï¼Œè¿™æ ·å°±æä¸æ¸…æ¥šåˆ°åº•æ˜¯gfs0è¿˜æ˜¯gfs1å‡ºé—®é¢˜ï¼Œ
+è¿™æ ·æˆ‘å°±é€‰æ‹©ä¿®å¤gfs1ï¼Œä½†ä¿®å¤å®Œä¹‹åå†æ¬¡æ£€æŸ¥çŠ¶æ€åˆå‘ç°gfs2ä¹ŸæŠ¥peer rejectedäº†ï¼Œç„¶ååˆä¿®å¤gfs2ã€‚ç„¶åï¼Œä½ æ²¡çŒœé”™ï¼Œgfs2åˆæŠ¥gfs0 rejectedäº†ã€‚
+åªèƒ½åˆä¿®å¤gfs0ï¼Œè¿™æ ·å­å°±ä¿®å¤äº†ä¸€åœˆï¼Œè™½ç„¶æœ€åé—®é¢˜è§£å†³äº†ï¼Œä½†è¿™æ ·å­æ€»å½’ä¸æ˜¯ä¸ªåŠæ³•ï¼Œç•™ä¸ªé—®é¢˜ç»§ç»­ç ”ç©¶å§ï¼Œæœ‰å¤´ç»ªäº†å†å†™ã€‚
 
 -EOF-
