@@ -28,3 +28,5 @@ share: true
 
 * [Practical File System Design:The Be File System](http://www.nobius.org/~dbg/practical-file-system-design.pdf).
 
+* [EmilOS](https://github.com/kiljacken/EmilOS). EmilOS is a hobby operating system, based on the code from JamesM's kernel develpment 
+ tutorial series.
