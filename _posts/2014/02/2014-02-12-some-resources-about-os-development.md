@@ -9,8 +9,8 @@ share: true
 最近一直在看操作系统的知识，但纯理论的东西只看看理解不了，也记不住，
 刚好看到一个自己实现操作系统（只是一个kernel）的项目[MikeOS](http://mikeos.berlios.de/)，
 所以就萌生了实践一下的念头，但该项目完全是汇编代码实现的，目前还玩不了，
-在它的相关资料里找到了一些C实现的例子，所以就打算照猫画虎吧，在github上也创建了一个repo，用来托管实践的代码，并起了一个很二的名字，
-[HuskyOS](https://github.com/qiulin/HuskyOS)，哈士奇，井犬。
+在它的相关资料里找到了一些C实现的例子，所以就打算照猫画虎吧，在github上也创建了一个repo，用来托管代码，并起了一个很二的名字，
+[HuskyOS](https://github.com/qiulin/HuskyOS)，哈士奇，之前我家里养过一只，著名的井犬。
 
 下面是搜集到的一些资料：
 
