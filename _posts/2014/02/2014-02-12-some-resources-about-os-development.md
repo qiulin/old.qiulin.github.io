@@ -14,11 +14,11 @@ share: true
 
 下面是搜集到的一些资料：
 
-* [JamesM's kernel development tutorials](http://www.jamesmolloy.co.uk/tutorial_html/index.html).This set of tutorials aims to take you
- through programming a simple UNIX-clone operating system for the x86 architecture.The tutorial uses C as the language of choice,
+* [JamesM's kernel development tutorials](http://www.jamesmolloy.co.uk/tutorial_html/index.html). This set of tutorials aims to take you
+ through programming a simple UNIX-clone operating system for the x86 architecture. The tutorial uses C as the language of choice,
   with liberally mixed in bits of assembler.
 
-* [MikeOS](http://mikeos.berlios.de).MikeOS is an operating system for x86 PCs, written in assembly language.
+* [MikeOS](http://mikeos.berlios.de). MikeOS is an operating system for x86 PCs, written in assembly language.
 
 * [Bran's kernel development tutorials](http://www.osdever.net/bkerndev/index.php).
 
@@ -30,3 +30,5 @@ share: true
 
 * [EmilOS](https://github.com/kiljacken/EmilOS). EmilOS is a hobby operating system, based on the code from JamesM's kernel develpment 
  tutorial series.
+
+* [OS Dev Wiki Tutorials](http://wiki.osdev.org/Tutorials). There are several OS development related tutorials on this wiki.
