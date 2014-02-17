@@ -20,13 +20,15 @@ share: true
 
     Google发现public_addresses和nodes里面的地址配反了，gluster官方的HOWTO里有一个[CTDB HOWTO](http://www.gluster.org/community/documentation/index.php/CTDB)里面详细的配置。
 
-        /etc/dtdb/public_addresses:
+    {% highlight bash %}
+    /etc/dtdb/public_addresses:
         
-        * List the VIPs that CTDB shoud create, you need one VIP for every Gluster server.
+    * List the VIPs that CTDB shoud create, you need one VIP for every Gluster server.
     
-        /etc/ctdb/nodes
+    /etc/ctdb/nodes
         
-        * List the IPs on each physical interface.
+    * List the IPs on each physical interface.
+    {% endhighlight %}
 
     简单说就是，public_addresses里面配的是虚拟VIP，即对外提供服务的IP，nodes里面配的是真实IP。
 
@@ -34,14 +36,16 @@ share: true
 
     在不停机的情况下，关闭selinux的命令为：
 
-        # setenforce 0
-
+    {% highlight bash %}
+    # setenforce 0
+    {% endhighlight %}
     永久关闭selinux的方法为：
 
-        # vi /etc/selinux/config
+    {% highlight bash %}
+    # vi /etc/selinux/config
 
-        ...
+    ...
 
-        SELINUX=disabled #由enforcing改为diabled
-
+    SELINUX=disabled #由enforcing改为diabled
+    {% endhighlight %}
 -EOF-
