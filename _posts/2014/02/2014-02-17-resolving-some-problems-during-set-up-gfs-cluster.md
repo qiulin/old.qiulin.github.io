@@ -14,7 +14,7 @@ share: true
 在搭建glusterfs集群的过程中（搭建过程参考[基于开源软件构建高性能集群NAS系统](http://blog.csdn.net/liuaigui/article/details/7163482)），
 遇到了几个问题，所幸经过google都解决了，现记录如下：
 
-1. 按照文档搭建完之后，ctdb无法启动，报如下错误：
+* 按照文档搭建完之后，ctdb无法启动，报如下错误：
     
     Failed to connect client socket to daemon.
 
@@ -32,7 +32,7 @@ share: true
 
     简单说就是，public_addresses里面配的是虚拟VIP，即对外提供服务的IP，nodes里面配的是真实IP。
 
-2. Samba服务无法启动，继续Google发现是selinux的问题，需要关闭selinux。
+* Samba服务无法启动，继续Google发现是selinux的问题，需要关闭selinux。
 
     在不停机的情况下，关闭selinux的命令为：
 
