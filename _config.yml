@@ -10,17 +10,16 @@ google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
 links:
   - name:         home
     url:          /
-  - name:         feed
-    url:          /feed.xml
   - name:         archives
     url:          http://blog.qlin.net/archives
-    external:     true
   - name:         email
     url:          mailto:xcodeman@gmail.com
     external:     true
   - name:         github
     url:          http://github.com/qiulin
     external:     true
+  - name:         feed
+    url:          /feed.xml
 
 pygments:         true
 permalink:        pretty
