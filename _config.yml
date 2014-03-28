@@ -2,7 +2,7 @@ title:            筑梦斋
 description:      潇潇洒洒世间游戏，逍逍遥遥笑看天地
 url:              blog.qlin.net
 baseurl:          # Base url. ( if use subdirectory-like URL )
-signoff:          qiulin
+signoff:          -eof-
 disqus_shortname: qlin
 google_analytics_id: # set tracking, UA-XXXX-Y.
 google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
