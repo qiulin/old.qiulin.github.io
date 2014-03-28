@@ -8,8 +8,6 @@ google_analytics_id: # set tracking, UA-XXXX-Y.
 google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
 
 links:
-  - name:         home
-    url:          /
   - name:         archives
     url:          http://blog.qlin.net/archives
   - name:         email
