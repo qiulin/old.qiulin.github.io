@@ -8,10 +8,7 @@ audio, canvas, video {
     *zoom: 1;
 }
 
-/* 要注意表单元素并不继承父级 font 的问题 */
-body, button, input, select, textarea {
-    font:500 0.875em/1.8 Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-}
+
 
 /* 去掉各Table  cell 的边距并让其边重合 */
 table {
@@ -133,12 +130,6 @@ mark {
     background: #fffdd1;
 }
 
-/* 代码片断 */
-pre, code {
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
 pre {
     background: #f8f8f8;
     border:1px solid #ddd;
