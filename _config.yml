@@ -7,8 +7,8 @@ disqus_shortname: qlin
 google_analytics_id: # set tracking, UA-XXXX-Y.
 
 links:
-  - name:         about
-    url:          /about
+  - name:         home
+    url:          /
   - name:         feed
     url:          /feed.xml
   - name:         archives
