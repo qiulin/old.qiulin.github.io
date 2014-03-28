@@ -5,7 +5,7 @@ baseurl:          # Base url. ( if use subdirectory-like URL )
 signoff:          qiulin
 disqus_shortname: qlin
 google_analytics_id: # set tracking, UA-XXXX-Y.
-google_custom_engine_id: 006532633397456281627:-irwrgt0a9w
+google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
 
 links:
   - name:         home
