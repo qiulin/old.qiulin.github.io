@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: index
 ---
 
 Hi, guys, I'm qiulin (aka xcodeman sometimes), you can also call me Charlie Lee, if you are a English speaker.
