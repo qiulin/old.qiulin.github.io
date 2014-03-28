@@ -10,7 +10,9 @@
       <div class="content">
         {{ content }}
       </div>
-    {% include gcse.html %}
+     {% include links.html %}
+        {% if site.google_custom_search_engine_id %}
+      {% include gcse.html %}
     </div>
     {% include footer.html %}
   </body>
