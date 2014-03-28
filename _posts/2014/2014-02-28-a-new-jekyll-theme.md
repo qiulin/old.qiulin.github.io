@@ -16,12 +16,13 @@ update:
 
 1. 添加了Google Custom Search Engine，只要在配置文件_config.yml里面添加自己的gcse id就好了。
 2. 去除了原作者的Scribble图片。
-3. 加大了站点标题的字号。
-4. 去除了signoff，而用简单-eof-代替。
+3. 站点标题采用h1标签。
+4. 去除了signoff，而用简单-eof-代替，同时增加了username参数。
+5. 改善中文排版，因为typo.css的侵入问题，选择[entry.css](http://nodejs.in/Entry.css/)来做中文排版，但也做了自己的裁剪，主要集中在*代码高亮*，移除了entry.css的代码高亮（只保留了字体）。Entry.css官方提供的css文件没有进行代码格式化，看起来实在费眼。
 
 
 下一步的计划：
 
-1. 改善中文排版，考虑使用typo.css。
+1. ~~改善中文排版，考虑使用typo.css~~
 
 考虑在合适的时候，把自己修改的版本作为一个单独的主题发布出来。
