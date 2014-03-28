@@ -1,65 +1,28 @@
 title:            筑梦斋
-description:      如果六十岁的时候，我还能自由的写代码，那将是一件非常幸福的事情
+description:      潇潇洒洒世间游戏，逍逍遥遥笑看天地
+url:              blog.qlin.net
+baseurl:          # Base url. ( if use subdirectory-like URL )
+signoff:          qiulin
 disqus_shortname: qlin
-#Comment out url when working locally to resolve base urls correctly
-url:              http://blog.qlin.net
+google_analytics_id: # set tracking, UA-XXXX-Y.
 
-# Owner/author information
-owner:
-  name:           Qiulin
-  avatar:         avatar.jpg
-  bio:            "潇潇洒洒世间游戏，逍逍遥遥笑看天地"
-  email:          xcodeman@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         qiulin
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
 links:
-  - title: 以前的博客
-    url: http://qlin.net
-    external: true
+  - name:         About
+    url:          /about
+  - name:         Feed
+    url:          /feed.xml
+  - name:         Blog
+    url:          http://blog.qlin.net
+    external:     true
+  - name:         Email
+    url:          mailto:xcodeman@gmail.com
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/qiulin
+    external:     true
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    China/Shanghai
-future:      true
-pygments:    true
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:year/:month/:day/:title
-
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+pygments:         true
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:     [autolink, tables]

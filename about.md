@@ -1,30 +1,17 @@
 ---
 layout: page
-permalink: /about/
-title: About me
-image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
-share: true
+title: About
+disqus: false
 ---
 
-ID：Qiulin（aka xcodeman）
+## Create by Mu-An
 
-Geek and Nerd,兴趣广泛，喜欢阅读，喜欢画画（但很长时间没有拿起画笔了）
+Give people something to read and get to know you. Here's my attempt: this is [Mu-An](http://muan.co), a designer developer who lives in London at the moment.
 
-毕业于一所三流大学的数学专业，因为历史原因，曾对数学没什么兴趣，但现在有很大的改观
+Tweet at [@muanchiou](http://twitter.com/muanchiou), read my code on [GitHub](http://github.com/muan), see my designs on [Dribbble](http://dribbble.com/muan), find my CV on [LinkedIn](http://uk.linkedin.com/in/muanchiou).
 
-喜欢计算机，喜欢折腾，有着Geek的精神，乐于接受新鲜事物
+This theme is made by me. You have a nice day. ♥
 
-最近混迹于新浪微博[@行者秋林](http://weibo.com/xcodeman)，开源的积极拥护者，Linux用户，Google粉
+## Modify by Rei
 
-希望成为一个技术流，并以之为毕生的快乐
-
-爱好和平，但有时候有点愤青，喜欢寻求规矩下的最大自由，不喜欢政治
-
-执着追求着自己的梦想，并为之放弃了很多，但不曾后悔
-
-现就职于杭州某网站做运维
-
-现主要关注Linux、Nginx、Java EE、移动应用和分布式文件存储等方面
+http://chloerei.com

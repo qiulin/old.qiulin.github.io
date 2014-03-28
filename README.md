@@ -1,115 +1,56 @@
-# HPSTR Jekyll Theme
+Scribble
+========
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
+A jekyll theme. [demo](http://chloerei.com/scribble/2013/10/11/placeholder-post/)
+<br />
 
-## What HPSTR brings to the table:
+![screenshot](http://scribble.muan.co/images/screenshot.png)
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Social Sharing links for Facebook, Twitter, and Google+ if you choose to enable.
-* Simple and clear permalink structure.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
-
-[Theme Preview](http://mmistakes.github.io/hpstr-jekyll-theme)
-
-![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
+This theme is fork from https://github.com/muan/scribble .
 
 ---
 
-General notes and suggestions for customizing **HPSTR RDX**.
+### Get started
 
-## Basic Setup for a new Jekyll site
-
-1. [Install Jekyll](http://jekyllrb.com) and read through the documentation if you haven't already.
-2. Fork the [HPSTR Jekyll THeme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork)
-3. Clone the repo you just forked to your computer.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-
-[Download the Theme](https://github.com/mmistakes/hpstr-jekyll-theme)
-
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo that I'm guessing you don't want on your site.
+1. [Fork the repository](https://github.com/chloerei/scribble/fork).
+2. Clone the repository to your computer.<br /> `git clone https://github.com/username/scribble` .
+3. `bundle install` .
+4. Run serve and watch assets change using `rake`, go to http://localhost:4000 for your site.
 
 ---
 
-## Setup for an Existing Jekyll site
+### Replace theme for exists site
 
-1. Clone the following folders: `_includes`, `_layouts`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `archive.html`, `index.html`, `tags.html`, and `feed.xml`.
-3. Set the following variables in your `config.yml` file:
-
-``` yaml
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: shortname
-url:              http://your-website.com
-
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-
-# Amount of posts to show on home page
-paginate: 5
-```
+1. Remove all theme files in your project, and commit.
+2. `git remote add scribble https://github.com/username/scribble` .
+3. `git pull scribble master` and fix conflict.
 
 ---
 
-## More Theme Setup Goodness
+### Make it yours
 
-To learn more about how to customize the theme, how feature images work, use the Grunt build script, and some other junk, [read up here](http://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/).
-
----
-
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
+1. I have extract most user specific information to `_config.yml`, you should be able to set up almost everything from it.
+2. Change about.md for blog intro.
+3. For domain settings, see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ---
 
-## License
+### Post options
 
-This theme is free and open source software, distributed under the [GNU General Public License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+When writing a post, there are 1 option you can add to the header.
+
+1. `disqus: false`<br />
+   Close Disqus for this post.
+
+---
+
+### Page options
+
+When writing a page, there are 3 options you can add to the header.
+
+1. `disqus: false`<br />
+   Close Disqus for this post.
+2. `prev_page: /path/to/prev_page`<br />
+   Set the prev page path for pagination.
+3. `next_page: /path/to/next_page`<br />
+   Set the next page path for pagination.
