@@ -7,17 +7,17 @@ disqus_shortname: qlin
 google_analytics_id: # set tracking, UA-XXXX-Y.
 
 links:
-  - name:         About
+  - name:         about
     url:          /about
-  - name:         Feed
+  - name:         feed
     url:          /feed.xml
-  - name:         Blog
-    url:          http://blog.qlin.net
+  - name:         archives
+    url:          http://blog.qlin.net/archives
     external:     true
-  - name:         Email
+  - name:         email
     url:          mailto:xcodeman@gmail.com
     external:     true
-  - name:         GitHub
+  - name:         github
     url:          http://github.com/qiulin
     external:     true
 
