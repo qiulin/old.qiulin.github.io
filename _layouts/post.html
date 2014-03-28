@@ -19,8 +19,9 @@
         </section>
       </div>
       {% include links.html %}
-        {% if site.google_custom_search_engine_id %}
-      {% include gcse.html %}
+      {% if site.google_custom_search_engine_id %}
+        {% include gcse.html %}
+      {% endif %}
       {% if site.disqus_shortname and page.disqus != false %}
         {% include disqus.html %}
       {% endif %}
