@@ -1,7 +1,7 @@
 title:            筑梦斋
 description:      潇潇洒洒世间游戏，逍逍遥遥笑看天地
 username:         qiulin
-url:              http://qiulin.github.com
+url:              http://qiulin.github.io
 baseurl:          # Base url. ( if use subdirectory-like URL )
 disqus_shortname: qlin
 google_analytics_id: # set tracking, UA-XXXX-Y.
@@ -9,7 +9,7 @@ google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
 
 links:
   - name:         archives
-    url:          http://blog.qlin.net/archives
+    url:          /archives
   - name:         email
     url:          mailto:xcodeman@gmail.com
     external:     true
