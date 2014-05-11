@@ -7,13 +7,12 @@
     {% include header.html %}
     <div id='container'>
       {% include links.html %}
-      <div class="content entry">
+        {% if site.google_custom_search_engine_id %}
+      {% include gcse.html %}
+      {% endif %}
+      <div class="content typo">
         {{ content }}
       </div>
-     {% include links.html %}
-      {% if site.google_custom_search_engine_id %}
-        {% include gcse.html %}
-      {% endif %}
     </div>
     {% include footer.html %}
   </body>

@@ -9,15 +9,19 @@
       {% include links.html %}
       {% include post_pagination.html %}
       <div class="content">
-        <section class='post'>
+        <section class='post entry'>
           <h1>
             <div class='date'>{{ page.date | date_to_string }}</div>
             {{ page.title }}
           </h1>
           {{ content }}
-          {% include signoff.html %}
+          <i>-eof-</i>
         </section>
       </div>
+      {% include links.html %}
+      {% if site.google_custom_search_engine_id %}
+        {% include gcse.html %}
+      {% endif %}
       {% if site.disqus_shortname and page.disqus != false %}
         {% include disqus.html %}
       {% endif %}
