@@ -1,26 +1,26 @@
-title:            筑梦斋
-description:      潇潇洒洒世间游戏，逍逍遥遥笑看天地
-username:         qiulin
-url:              http://qiulin.github.io
-baseurl:          # Base url. ( if use subdirectory-like URL )
-disqus_shortname: qlin
-google_analytics_id: # set tracking, UA-XXXX-Y.
-google_custom_search_engine_id: 006532633397456281627:-irwrgt0a9w
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
 
-links:
-  - name:         archives
-    url:          /archives
-  - name:         email
-    url:          mailto:xcodeman@gmail.com
-    external:     true
-  - name:         github
-    url:          http://github.com/qiulin
-    external:     true
-  - name:         feed
-    url:          /feed.xml
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
-pygments:         true
-permalink:        pretty
-markdown:         redcarpet
-redcarpet:
-  extensions:     [autolink, tables]
+# Setup
+title:               Coffee Time
+tagline:             'Just another blog of qiulin'
+description:         'Its time for a change.'
+url:                 http://qlin.net
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              qiulin.lee
+  url:               https://twitter.com/qiulin0728
+  email:             xcodeman@gmail.com
+
+# Custom vars
+version:             1.0.1
