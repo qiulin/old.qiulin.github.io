@@ -1,0 +1,1245 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>时间处理(Date) | Logstash 最佳实践</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../filter/mutate.html" />
+    
+    
+    <link rel="prev" href="../filter/grok.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="1420550685425">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="get_start/README.html">
+            
+                
+                    <a href="../get_start/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础知识
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="get_start/introduction.html">
+            
+                
+                    <a href="../get_start/introduction.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="get_start/install.html">
+            
+                
+                    <a href="../get_start/install.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="get_start/hello_world.html">
+            
+                
+                    <a href="../get_start/hello_world.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Hello World
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="get_start/full_config.html">
+            
+                
+                    <a href="../get_start/full_config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         配置语法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="input/README.html">
+            
+                
+                    <a href="../input/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         输入插件(Input)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="input/stdin.html">
+            
+                
+                    <a href="../input/stdin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         标准输入(Stdin)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="input/file.html">
+            
+                
+                    <a href="../input/file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         读取文件(File)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="input/tcp.html">
+            
+                
+                    <a href="../input/tcp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         读取网络数据(TCP)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="input/generator.html">
+            
+                
+                    <a href="../input/generator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         生成测试数据(Generator)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="input/syslog.html">
+            
+                
+                    <a href="../input/syslog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         读取 Syslog 数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="input/redis.html">
+            
+                
+                    <a href="../input/redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         读取 Redis 数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="input/collectd.html">
+            
+                
+                    <a href="../input/collectd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         读取 Collectd 数据
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="codec/README.html">
+            
+                
+                    <a href="../codec/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         编码插件(Codec)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="codec/json.html">
+            
+                
+                    <a href="../codec/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         采用 JSON 编码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="codec/multiline.html">
+            
+                
+                    <a href="../codec/multiline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         合并多行数据(Multiline)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="filter/README.html">
+            
+                
+                    <a href="../filter/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         过滤器插件(Filter)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="filter/grok.html">
+            
+                
+                    <a href="../filter/grok.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Grok 正则捕获
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4.2" data-path="filter/date.html">
+            
+                
+                    <a href="../filter/date.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         时间处理(Date)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="filter/mutate.html">
+            
+                
+                    <a href="../filter/mutate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         数据修改(Mutate)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="filter/geoip.html">
+            
+                
+                    <a href="../filter/geoip.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         GeoIP 查询归类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="filter/json.html">
+            
+                
+                    <a href="../filter/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         JSON 编解码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="filter/split.html">
+            
+                
+                    <a href="../filter/split.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         split 拆分事件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="filter/useragent.html">
+            
+                
+                    <a href="../filter/useragent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         UserAgent 匹配归类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.8" data-path="filter/kv.html">
+            
+                
+                    <a href="../filter/kv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                         Key-Value 切分
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.9" data-path="filter/ruby.html">
+            
+                
+                    <a href="../filter/ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                         随心所欲的 Ruby 处理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.10" data-path="filter/metrics.html">
+            
+                
+                    <a href="../filter/metrics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                         数值统计(Metrics)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="output/README.html">
+            
+                
+                    <a href="../output/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         输出插件(Output)
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="output/stdout.html">
+            
+                
+                    <a href="../output/stdout.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         标准输出(Stdout)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="output/file.html">
+            
+                
+                    <a href="../output/file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         保存成文件(File)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="output/elasticsearch.html">
+            
+                
+                    <a href="../output/elasticsearch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         保存进 Elasticsearch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="output/redis.html">
+            
+                
+                    <a href="../output/redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         输出到 Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="output/tcp.html">
+            
+                
+                    <a href="../output/tcp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         输出网络数据(TCP)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="output/statsd.html">
+            
+                
+                    <a href="../output/statsd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         输出到 Statsd
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="output/nagios.html">
+            
+                
+                    <a href="../output/nagios.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         报警到 Nagios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.8" data-path="output/email.html">
+            
+                
+                    <a href="../output/email.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                         发送邮件(Email)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.9" data-path="output/exec.html">
+            
+                
+                    <a href="../output/exec.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                         调用命令执行(Exec)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="contrib_plugins/README.html">
+            
+                
+                    <a href="../contrib_plugins/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         尚未进入官方库的常用插件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="contrib_plugins/kafka.html">
+            
+                
+                    <a href="../contrib_plugins/kafka.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Kafka
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="contrib_plugins/hdfs.html">
+            
+                
+                    <a href="../contrib_plugins/hdfs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         HDFS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="contrib_plugins/scribe.html">
+            
+                
+                    <a href="../contrib_plugins/scribe.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Scribe
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="dive_into/README.html">
+            
+                
+                    <a href="../dive_into/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         深入了解
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="dive_into/write_your_own.html">
+            
+                
+                    <a href="../dive_into/write_your_own.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         自己写一个插件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="dive_into/why_jvm_and_howto_run_with_mri.html">
+            
+                
+                    <a href="../dive_into/why_jvm_and_howto_run_with_mri.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         为什么用 JRuby? 能用 MRI 运行么?
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="ecosystem/README.html">
+            
+                
+                    <a href="../ecosystem/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         周边项目
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="ecosystem/rsyslog.html">
+            
+                
+                    <a href="../ecosystem/rsyslog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Rsyslog
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="ecosystem/logstash_forwarder.html">
+            
+                
+                    <a href="../ecosystem/logstash_forwarder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         logstash-forwarder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="ecosystem/nxlog.html">
+            
+                
+                    <a href="../ecosystem/nxlog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         nxlog
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="ecosystem/heka.html">
+            
+                
+                    <a href="../ecosystem/heka.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         heka
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="ecosystem/message_passing.html">
+            
+                
+                    <a href="../ecosystem/message_passing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         Message::Passing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.6" data-path="ecosystem/fluent.html">
+            
+                
+                    <a href="../ecosystem/fluent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                         fluent
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Logstash 最佳实践</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_24">
+                    
+                        <h1 id="date">时间处理(Date)</h1>
+<p>之前章节已经提过，<em>filters/date</em> 插件可以用来转换你的日志记录中的时间字符串，变成 <code>LogStash::Timestamp</code> 对象，然后转存到 <code>@timestamp</code> 字段里。</p>
+<p><strong>注意：因为在稍后的 outputs/elasticsearch 中常用的 <code>%{+YYYY.MM.dd}</code> 这种写法必须读取 <code>@timestamp</code> 数据，所以一定不要直接删掉这个字段保留自己的字段，而是应该用 filters/date 转换后删除自己的字段！</strong></p>
+<p>这在导入旧数据的时候固然非常有用，而在实时数据处理的时候同样有效，因为一般情况下数据流程中我们都会有缓冲区，导致最终的实际处理时间跟事件产生时间略有偏差。</p>
+<p><em>小贴士：个人强烈建议打开 Nginx 的 access_log 配置项的 buffer 参数，对极限响应性能有极大提升！</em></p>
+<h2 id="">配置示例</h2>
+<p><em>filters/date</em> 插件支持五种时间格式：</p>
+<h3 id="iso8601">ISO8601</h3>
+<p>类似 &quot;2011-04-19T03:44:01.103Z&quot; 这样的格式。具体Z后面可以有 &quot;08:00&quot;也可以没有，&quot;.103&quot;这个也可以没有。常用场景里来说，Nginx 的 <em>log_format</em> 配置里就可以使用 <code>$time_iso8601</code> 变量来记录请求时间成这种格式。</p>
+<h3 id="unix">UNIX</h3>
+<p>UNIX 时间戳格式，记录的是从 1970 年起始至今的总秒数。Squid 的默认日志格式中就使用了这种格式。</p>
+<h3 id="unix_ms">UNIX_MS</h3>
+<p>这个时间戳则是从 1970 年起始至今的总毫秒数。据我所知，JavaScript 里经常使用这个时间格式。</p>
+<h3 id="tai64n">TAI64N</h3>
+<p>TAI64N 格式比较少见，是这个样子的：<code>@4000000052f88ea32489532c</code>。我目前只知道常见应用中， qmail 会用这个格式。</p>
+<h3 id="joda-time-">Joda-Time 库</h3>
+<p>Logstash 内部使用了 Java 的 Joda 时间库来作时间处理。所以我们可以使用 Joda 库所支持的时间格式来作具体定义。Joda 时间格式定义见下表：</p>
+<h4 id="">时间格式</h4>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Presentation</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G</td>
+<td>era</td>
+<td>text</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>C</td>
+<td>century of era (&gt;=0)</td>
+<td>number</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>year of era (&gt;=0)</td>
+<td>year</td>
+<td>1996</td>
+</tr>
+<tr>
+<td>x</td>
+<td>weekyear</td>
+<td>year</td>
+<td>1996</td>
+</tr>
+<tr>
+<td>w</td>
+<td>week of weekyear</td>
+<td>number</td>
+<td>27</td>
+</tr>
+<tr>
+<td>e</td>
+<td>day of week</td>
+<td>number</td>
+<td>2</td>
+</tr>
+<tr>
+<td>E</td>
+<td>day of week</td>
+<td>text</td>
+<td>Tuesday; Tue</td>
+</tr>
+<tr>
+<td>y</td>
+<td>year</td>
+<td>year</td>
+<td>1996</td>
+</tr>
+<tr>
+<td>D</td>
+<td>day of year</td>
+<td>number</td>
+<td>189</td>
+</tr>
+<tr>
+<td>M</td>
+<td>month of year</td>
+<td>month</td>
+<td>July; Jul; 07</td>
+</tr>
+<tr>
+<td>d</td>
+<td>day of month</td>
+<td>number</td>
+<td>10</td>
+</tr>
+<tr>
+<td>a</td>
+<td>halfday of day</td>
+<td>text</td>
+<td>PM</td>
+</tr>
+<tr>
+<td>K</td>
+<td>hour of halfday (0~11)</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td>h</td>
+<td>clockhour of halfday (1~12)</td>
+<td>number</td>
+<td>12</td>
+</tr>
+<tr>
+<td>H</td>
+<td>hour of day (0~23)</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td>k</td>
+<td>clockhour of day (1~24)</td>
+<td>number</td>
+<td>24</td>
+</tr>
+<tr>
+<td>m</td>
+<td>minute of hour</td>
+<td>number</td>
+<td>30</td>
+</tr>
+<tr>
+<td>s</td>
+<td>second of minute</td>
+<td>number</td>
+<td>55</td>
+</tr>
+<tr>
+<td>S</td>
+<td>fraction of second</td>
+<td>number</td>
+<td>978</td>
+</tr>
+<tr>
+<td>z</td>
+<td>time zone</td>
+<td>text</td>
+<td>Pacific Standard Time; PST</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>time zone offset/id</td>
+<td>zone</td>
+<td>-0800; -08:00; America/Los_Angeles</td>
+</tr>
+<tr>
+<td>&#39;</td>
+<td>escape for text</td>
+<td>delimiter</td>
+<td></td>
+</tr>
+<tr>
+<td>&#39;&#39;</td>
+<td>single quote</td>
+<td>literal</td>
+<td>&#39;</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html" target="_blank">http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html</a></p>
+<p>下面我们写一个 Joda 时间格式的配置作为示例：</p>
+<pre><code>filter {
+    grok {
+        match =&gt; [&quot;message&quot;, &quot;%{HTTPDATE:logdate}&quot;]
+    }
+    date {
+        match =&gt; [&quot;logdate&quot;, &quot;dd/MMM/yyyy:HH:mm:ss Z&quot;]
+    }
+}
+</code></pre><p><strong>注意：时区偏移量只需要用一个字母 <code>Z</code> 即可。</strong></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../filter/grok.html" class="navigation navigation-prev " aria-label="Previous page: Grok 正则捕获"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../filter/mutate.html" class="navigation navigation-next " aria-label="Next page: 数据修改(Mutate)"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
