@@ -10,8 +10,8 @@ relative_permalinks: false
 
 # Setup
 title:               筑梦斋
-tagline:             '潇潇洒洒世间游戏，逍逍遥遥笑对天地'
-description:         'Its time for a change.'
+tagline:             'qlin.net'
+description:         '潇潇洒洒世间游戏，逍逍遥遥笑对天地'
 url:                 http://qlin.net
 baseurl:             /
 paginate:            5
