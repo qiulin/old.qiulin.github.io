@@ -6,7 +6,7 @@ highlighter:         pygments
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
 title:               筑梦斋
@@ -19,8 +19,11 @@ paginate:            5
 # About/contact
 author:
   name:              qiulin.lee
-  url:               https://twitter.com/qiulin0728
+  url:               https://weibo.com/xcodeman
   email:             xcodeman@gmail.com
 
 # Custom vars
 version:             1.0.1
+
+github:
+    repo:           https://github.com/qiulin
