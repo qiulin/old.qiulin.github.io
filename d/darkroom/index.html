@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>darkroom demo</title>
+        <link rel="stylesheet" href="./darkroom/css/darkroom.min.css">
+        <style type="text/css" media="screen">
+            .wrap {
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <img src="./img.jpg" id="target" alt="DomoKun"/>
+        </div>
+        <script src="./darkroom/js/fabric.js"></script>
+        <script src="./darkroom/js/darkroom.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            var dkrm = new Darkroom('#target', {
+                minWidth: 100,
+                minHeight: 100,
+                maxWidth: 1080,
+                maxHeight: 1080,
+
+                plugins: {
+                    crop: {
+                        minWidth: 10,
+                        minHeight: 10,
+                        quickCropKey: 67
+                    }
+                },
+                init: function() {
+                    var cropPlugin = this.getPlugin('crop');
+                    cropPlugin.selectZone(170, 25, 300, 300);
+                }
+            });
+        </script>
+    </body>
+</html>
