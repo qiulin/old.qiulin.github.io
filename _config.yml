@@ -27,3 +27,46 @@ version:             1.0.1
 
 github:
     repo:           https://github.com/qiulin
+
+name: Coffee Time
+description:         '潇潇洒洒世间游戏 逍逍遥遥笑对天地'
+meta_description: "a blog of qlin"
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://qlin.net'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: true
+disqus_shortname: 'qlin'
+
+# Details for the RSS feed generator
+url:            'http://qlin.net'
+author:         'qiulin'
+authorTwitter:  'qiulin728'
+
+permalink:           pretty
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
