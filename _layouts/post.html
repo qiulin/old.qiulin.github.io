@@ -3,7 +3,7 @@ layout: default
 archive: true
 ---
 
-<article class="post">
+<article class="post yue">
     <header>
         <h1>{{ page.title }}</h1>
         <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
@@ -36,7 +36,7 @@ archive: true
 
 <!-- Archive post list -->
 {% if page.archive %}
-    <ul id="post-list" class="archive readmore">
+    <ul id="post-list" class="archive readmore yue">
         <h3>Read more</h3>
         {% for post in site.posts %}
             <li>
