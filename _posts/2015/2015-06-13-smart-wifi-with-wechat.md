@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 微信智能 WiFi 方案
+title: "微信智能 WiFi 方案"
 tags: ["微信", "WiFi", "智能"]
 ---
 
