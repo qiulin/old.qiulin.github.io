@@ -11,7 +11,7 @@ tags: ["微信", "WiFi", "智能"]
 
 流程如下：
 
-![](http://pf9.org/content/images/2015/06/QQ--20150613080838.png)
+![](/public/smart_wifi_with_wechat_1.png)
 
 该流程主要涉及到的问题点如下：
 
@@ -32,7 +32,7 @@ tags: ["微信", "WiFi", "智能"]
 
 流程如下：
 
-![](http://pf9.org/content/images/2015/06/QQ--20150613081158.png)
+![](/public/smart_wifi_with_wechat_2.png)
 
 这里面的主要技术细节在于如何实现用户访问流量的监控、拦截和转发，推荐的技术选型为：
  **OpenWRT + WiFiDog + RADIUS**。
