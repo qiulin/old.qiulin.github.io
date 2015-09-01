@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 微信智能 WiFi 方案
-tag: ["微信", "WiFi"， "智能"]
+tags: ["微信", "WiFi", "智能"]
 ---
 
 首先，我们大致描述微信智能 WiFi 的使用场景，在某个公共场所，能够提供一定的开放 WiFi 覆
