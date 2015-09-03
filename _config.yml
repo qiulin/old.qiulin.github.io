@@ -1,34 +1,4 @@
-# Dependencies
-markdown:            redcarpet
-highlighter:         pygments
-
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: false
-
-# Setup
-title:               筑梦斋
-tagline:             'qlin.net'
-description:         '潇潇洒洒世间游戏<br>逍逍遥遥笑对天地'
-url:                 http://qlin.net
-baseurl:             /
-paginate:            5
-
-# About/contact
-author:
-  name:              qiulin.lee
-  url:               https://weibo.com/xcodeman
-  email:             xcodeman@gmail.com
-
-# Custom vars
-version:             1.0.1
-
-github:
-    repo:           https://github.com/qiulin
-
-name: Coffee Time
+name: 如是
 description:         '潇潇洒洒世间游戏 逍逍遥遥笑对天地'
 meta_description: "a blog of qlin"
 
@@ -40,7 +10,6 @@ highlighter: pygments
 paginate: 20
 baseurl: /
 domain_name: 'http://qlin.net'
-google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
 disqus_shortname: 'qlin'
 
