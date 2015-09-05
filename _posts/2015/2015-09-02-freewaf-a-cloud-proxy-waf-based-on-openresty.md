@@ -4,7 +4,7 @@ tags: ["FreeWAF", "Nginx", "Lua"]
 layout: post
 ---
 
-最近在关注基于 Nginx + Lua ( OpenResty ) 的 WAF 解决方案，国内的 @loveshell 开源开源了一个 [ngx_lua_waf](https://github.com/loveshell/ngx_lua_waf)，了解了一下基本功能还是有的，但规则比较简单，总体来说不太满足需求。后来又找了半天，终于又找到了一个国外开源的 FreeWAF，基于和 ModSecurity 相似的规则集，当然写法不太一样，是作者基于自己的硕士论文实现的，有理论又有实践。
+最近在关注基于 Nginx + Lua ( OpenResty ) 的 WAF 解决方案，国内的 @loveshell 开源开源了一个 [ngx\_lua\_waf](https://github.com/loveshell/ngx_lua_waf)，了解了一下基本功能还是有的，但规则比较简单，总体来说不太满足需求。后来又找了半天，终于又找到了一个国外开源的 FreeWAF，基于和 ModSecurity 相似的规则集，当然写法不太一样，是作者基于自己的硕士论文实现的，有理论又有实践。
 
 
 
